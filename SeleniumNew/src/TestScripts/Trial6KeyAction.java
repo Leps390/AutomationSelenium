@@ -1,4 +1,4 @@
-package com.driver;
+package TestScripts;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;

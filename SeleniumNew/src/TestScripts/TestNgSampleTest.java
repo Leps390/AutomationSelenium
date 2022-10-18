@@ -1,10 +1,13 @@
 package TestScripts;
 
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class TestNgSampleTest 
 {
+	
 	@BeforeMethod
 	public void beforeTest() {
 	System.out.println("Prerequisite");
@@ -16,6 +19,7 @@ public class TestNgSampleTest
 	  //System.out.println("Prerequisite");
 	  System.out.println("One ");
   }
+  
   @Test
   public void sampleMethodTwo()
   {
@@ -34,4 +38,9 @@ public class TestNgSampleTest
 	 // System.out.println("Prerequisite");
 	  System.out.println("Four ");
   }
+  @AfterMethod
+	public void afterMethod() {
+	System.out.println("after execution");
+		
+	}
 }

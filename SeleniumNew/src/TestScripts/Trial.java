@@ -1,4 +1,4 @@
-package com.driver;
+package TestScripts;
 
 import java.util.Scanner;
 

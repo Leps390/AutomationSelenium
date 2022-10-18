@@ -1,4 +1,4 @@
-package com.driver;
+package TestScripts;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -7,8 +7,14 @@ public class Trial1 {
 
 	public static void main(String[] args) throws Exception 
 	{
-		System.setProperty("webdriver.chrome.driver",
-				"E:\\OBSQURA\\Selenium class\\chromedriver_win32 (1)\\chromedriver.exe");
+		
+
+String path = System.getProperty("user.dir"); 
+System.out.println(path);
+System.setProperty("webdriver.chrome.driver",path+"\\src\\resources\\chromedriver.exe");
+
+		//System.setProperty("webdriver.chrome.driver",
+			//	"E:\\OBSQURA\\Selenium class\\chromedriver_win32 (1)\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();// initializing chrome
 		driver.get("https://selenium.obsqurazone.com/simple-form-demo.php");
 		
