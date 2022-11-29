@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.obsqura.utilities.ExtendReportUtility"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="Test1(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.obsqura.testscripts.ClientPageTest">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="addingClient"/>
+          <include name="testClientResetId"/>
+          <include name="testClientReset"/>
+          <include name="viewDetail"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.obsqura.testscripts.ClientPageTest -->
+      <class name="com.obsqura.testscripts.HomePageTest">
+        <methods>
+          <include name="testCheckBox"/>
+          <include name="closeBrowser"/>
+          <include name="testInvalidCredentials"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- com.obsqura.testscripts.HomePageTest -->
+      <class name="com.obsqura.testscripts.TimeSheetTest">
+        <methods>
+          <include name="setGeneratePaySlip"/>
+          <include name="setGenerateInvoice"/>
+          <include name="setTimSheetPage"/>
+          <include name="closeBrowser"/>
+          <include name="setFileUpload"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- com.obsqura.testscripts.TimeSheetTest -->
+      <class name="com.obsqura.testscripts.WorkerPageTest">
+        <methods>
+          <include name="testAddWorkerSave"/>
+          <include name="testAddBankDetails"/>
+          <include name="testNiNumberSearch"/>
+          <include name="testWorkerLastNameSerach"/>
+          <include name="closeBrowser"/>
+          <include name="openBrowser"/>
+          <include name="testInvalidWorkerName"/>
+        </methods>
+      </class> <!-- com.obsqura.testscripts.WorkerPageTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

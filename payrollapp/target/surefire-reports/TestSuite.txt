@@ -1,0 +1,143 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 28, Failures: 15, Errors: 0, Skipped: 0, Time elapsed: 563.583 sec <<< FAILURE! - in TestSuite
+testCheckBox(com.obsqura.testscripts.HomePageTest)  Time elapsed: 3.062 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.obsqura.testscripts.HomePageTest.testCheckBox(HomePageTest.java:72)
+
+testInvalidCredentials(com.obsqura.testscripts.HomePageTest)  Time elapsed: 0.218 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.obsqura.testscripts.HomePageTest.testInvalidCredentials(HomePageTest.java:124)
+
+addingClient(com.obsqura.testscripts.ClientPageTest)  Time elapsed: 11.842 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.obsqura.testscripts.ClientPageTest.addingClient(ClientPageTest.java:124)
+
+testClientReset(com.obsqura.testscripts.ClientPageTest)  Time elapsed: 15.258 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="w0"]/div[3]/button[2]"}
+  (Session info: chrome=107.0.5304.108)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'LEPS', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e53998dc2b209a3034a158d97f791cf5, findElement {using=xpath, value=//*[@id="w0"]/div[3]/button[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.108, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\ACER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63491}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63491/devtoo..., se:cdpVersion: 107.0.5304.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e53998dc2b209a3034a158d97f791cf5
+	at com.obsqura.testscripts.ClientPageTest.testClientReset(ClientPageTest.java:172)
+
+viewDetail(com.obsqura.testscripts.ClientPageTest)  Time elapsed: 12.165 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/header/div[3]/div/div/div[2]/ul/li[3]"}
+  (Session info: chrome=107.0.5304.108)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'LEPS', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [60d0cc15fb6360d42bca43391f14f6fe, findElement {using=xpath, value=/html/body/header/div[3]/div/div/div[2]/ul/li[3]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.108, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\ACER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63677}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63677/devtoo..., se:cdpVersion: 107.0.5304.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 60d0cc15fb6360d42bca43391f14f6fe
+	at com.obsqura.testscripts.ClientPageTest.viewDetail(ClientPageTest.java:135)
+
+testAddBankDetails(com.obsqura.testscripts.WorkerPageTest)  Time elapsed: 10.077 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#worker\-ac_name"}
+  (Session info: chrome=107.0.5304.108)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'LEPS', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [efc032534f4cc340424c5fe4ff07b30c, findElement {using=id, value=worker-ac_name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.108, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\ACER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63704}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63704/devtoo..., se:cdpVersion: 107.0.5304.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: efc032534f4cc340424c5fe4ff07b30c
+	at com.obsqura.testscripts.WorkerPageTest.testAddBankDetails(WorkerPageTest.java:108)
+
+testAddWorkerSave(com.obsqura.testscripts.WorkerPageTest)  Time elapsed: 17.216 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.obsqura.testscripts.WorkerPageTest.testAddWorkerSave(WorkerPageTest.java:98)
+
+testInvalidWorkerName(com.obsqura.testscripts.WorkerPageTest)  Time elapsed: 18.563 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/section/div/div/div[2]/div[2]/table/tbody/tr/td/div"}
+  (Session info: chrome=107.0.5304.108)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'LEPS', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [00150dda81558d6856d498d6b2ef6a9b, findElement {using=xpath, value=/html/body/section/div/div/div[2]/div[2]/table/tbody/tr/td/div}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.108, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\ACER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63785}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63785/devtoo..., se:cdpVersion: 107.0.5304.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 00150dda81558d6856d498d6b2ef6a9b
+	at com.obsqura.testscripts.WorkerPageTest.testInvalidWorkerName(WorkerPageTest.java:226)
+
+testNiNumberSearch(com.obsqura.testscripts.WorkerPageTest)  Time elapsed: 13.97 sec  <<< FAILURE!
+java.lang.AssertionError: expected [] but found [ST004041B]
+	at com.obsqura.testscripts.WorkerPageTest.testNiNumberSearch(WorkerPageTest.java:203)
+
+testWorkerLastNameSerach(com.obsqura.testscripts.WorkerPageTest)  Time elapsed: 24.085 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/section/div/div/div[2]/div[2]/table/tbody/tr[2]/td[2]"}
+  (Session info: chrome=107.0.5304.108)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'LEPS', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1844f19042fb59162f09848f94b23f93, findElement {using=xpath, value=/html/body/section/div/div/div[2]/div[2]/table/tbody/tr[2]/td[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.108, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\ACER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63881}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63881/devtoo..., se:cdpVersion: 107.0.5304.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1844f19042fb59162f09848f94b23f93
+	at com.obsqura.testscripts.WorkerPageTest.testWorkerLastNameSerach(WorkerPageTest.java:158)
+
+setFileUpload(com.obsqura.testscripts.TimeSheetTest)  Time elapsed: 18.044 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/section/div/div/div[2]/form/div[2]/button"}
+  (Session info: chrome=107.0.5304.108)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'LEPS', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f405a603444a4ed1913e9b5f652394dc, findElement {using=xpath, value=/html/body/section/div/div/div[2]/form/div[2]/button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.108, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\ACER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63975}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63975/devtoo..., se:cdpVersion: 107.0.5304.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f405a603444a4ed1913e9b5f652394dc
+	at com.obsqura.testscripts.TimeSheetTest.setFileUpload(TimeSheetTest.java:88)
+
+setGenerateInvoice(com.obsqura.testscripts.TimeSheetTest)  Time elapsed: 10.247 sec  <<< FAILURE!
+org.openqa.selenium.NoAlertPresentException: 
+no such alert
+  (Session info: chrome=107.0.5304.108)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'LEPS', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ceb8803b6d6987dc849a8cff73b82e8, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.108, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\ACER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64010}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64010/devtoo..., se:cdpVersion: 107.0.5304.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ceb8803b6d6987dc849a8cff73b82e8
+	at com.obsqura.testscripts.TimeSheetTest.setGenerateInvoice(TimeSheetTest.java:74)
+
+setGeneratePaySlip(com.obsqura.testscripts.TimeSheetTest)  Time elapsed: 19.862 sec  <<< FAILURE!
+org.openqa.selenium.NoAlertPresentException: 
+no such alert
+  (Session info: chrome=107.0.5304.108)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'LEPS', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5ecbc95d7730176e7118ec08728ed2c7, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.108, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\ACER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64043}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64043/devtoo..., se:cdpVersion: 107.0.5304.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5ecbc95d7730176e7118ec08728ed2c7
+	at com.obsqura.testscripts.TimeSheetTest.setGeneratePaySlip(TimeSheetTest.java:54)
+
+setTimSheetPage(com.obsqura.testscripts.TimeSheetTest)  Time elapsed: 5.602 sec  <<< FAILURE!
+java.lang.AssertionError: expected [TIMESHEETS, Heading do not match] but found [TIMESHEETS]
+	at com.obsqura.testscripts.TimeSheetTest.setTimSheetPage(TimeSheetTest.java:41)
+
+testClientResetId(com.obsqura.testscripts.ClientPageTest)  Time elapsed: 15.12 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="w0"]/div[3]/button[2]"}
+  (Session info: chrome=107.0.5304.108)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'LEPS', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c4d24e89b20eaa3898ef710c52f66410, findElement {using=xpath, value=//*[@id="w0"]/div[3]/button[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.108, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\ACER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64117}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64117/devtoo..., se:cdpVersion: 107.0.5304.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c4d24e89b20eaa3898ef710c52f66410
+	at com.obsqura.testscripts.ClientPageTest.testClientResetId(ClientPageTest.java:202)
+
